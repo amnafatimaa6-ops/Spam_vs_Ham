@@ -4,22 +4,18 @@ import string
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import (
-    accuracy_score,
-    precision_score,
-    recall_score,
-    f1_score,
-    confusion_matrix
-)
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 
 # ----------------------------
 # Load Dataset
 # ----------------------------
 df = pd.read_csv("spam.csv", encoding="latin1")
 
+# Keep only relevant columns
 df = df[["v1", "v2"]]
 df.columns = ["label", "message"]
 
+# Map labels to numeric
 df["label_num"] = df["label"].map({"ham": 0, "spam": 1})
 
 # ----------------------------
@@ -42,7 +38,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     df["label_num"],
     test_size=0.2,
     random_state=42,
-    stratify=df["label_num"]  # keeps spam/ham balance
+    stratify=df["label_num"]
 )
 
 # ----------------------------
@@ -59,13 +55,12 @@ X_train_vec = vectorizer.fit_transform(X_train)
 X_test_vec = vectorizer.transform(X_test)
 
 # ----------------------------
-# Model (Balanced)
+# Model (Logistic Regression with balanced classes)
 # ----------------------------
 model = LogisticRegression(
     max_iter=2000,
     class_weight="balanced"
 )
-
 model.fit(X_train_vec, y_train)
 
 # ----------------------------
@@ -83,9 +78,9 @@ conf_matrix = confusion_matrix(y_test, y_pred)
 # Prediction Function
 # ----------------------------
 def predict_message(message):
+    """Predict if a message is spam or ham and return label + confidence"""
     message = clean_text(message)
     vec = vectorizer.transform([message])
-
     prediction = model.predict(vec)[0]
     probability = model.predict_proba(vec)[0][prediction]
 
