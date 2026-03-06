@@ -16,14 +16,6 @@ Features
 
 ✅ Displays model metrics: Accuracy, Precision, Recall, F1 Score.
 
-✅ Visualizes dataset distribution (Ham vs Spam).
-
-✅ Shows a confusion matrix for model predictions.
-
-✅ Interactive and visually appealing UI with Streamlit.
-
-Dataset
-
 The project uses the SMS Spam Collection dataset (spam.csv) with two columns:
 
 v1 → Label: "ham" or "spam".
