@@ -14,8 +14,6 @@ Features
 
 ✅ Input a message manually or select from the dataset (spam.csv).
 
-✅ Displays model metrics: Accuracy, Precision, Recall, F1 Score.
-
 The project uses the SMS Spam Collection dataset (spam.csv) with two columns:
 
 v1 → Label: "ham" or "spam".
