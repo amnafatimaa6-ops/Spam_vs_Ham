@@ -1,39 +1,71 @@
-#Spam_vs_Ham
+# Spam_vs_Ham
 
-Live Demo: https://spamvsham-o9hmruazeddpmfmmwcgwcc.streamlit.app/
+## 🚀 Live Demo  
+👉 https://spamvsham-o9hmruazeddpmfmmwcgwcc.streamlit.app/
 
-Overview
+---
 
-The Spam vs Ham Classifier is a machine learning project built with Python and Streamlit. It classifies text messages as Spam or Ham (Not Spam) using a Logistic Regression model and TF-IDF vectorization.
+## 📸 Screenshots
 
-This tool is ideal for detecting unwanted messages and can be extended to email filtering, SMS apps, or any text-based spam detection system.
+### Screenshot 1
+![Screenshot1](screenshot1.png)
 
-Features
+### Demo (GIF)
+![Spam vs Ham Demo](Spam vs Ham Classifier demo.gif)
 
-✅ Predict whether a message is Spam or Ham.
+---
 
-✅ Input a message manually or select from the dataset (spam.csv).
+## 📖 Overview
 
-The project uses the SMS Spam Collection dataset (spam.csv) with two columns:
+The **Spam vs Ham Classifier** is a machine learning project built using **Python** and **Streamlit**. It classifies text messages as **Spam** or **Ham (Not Spam)** using a **Logistic Regression model** with **TF-IDF vectorization**.
 
-v1 → Label: "ham" or "spam".
+This tool is ideal for detecting unwanted messages and can be extended to:
+- Email filtering  
+- SMS applications  
+- Any text-based spam detection system  
 
-v2 → Message text.
+---
 
-Preprocessing:
+## ✨ Features
 
-Converts text to lowercase.
+✅ Predict whether a message is Spam or Ham  
+✅ Input custom messages manually  
+✅ Select sample messages from dataset (`spam.csv`)  
 
-Removes numbers and punctuation.
+---
 
-Removes extra whitespaces.
+## 📂 Dataset
 
-Model
+The project uses the **SMS Spam Collection dataset (`spam.csv`)**:
 
-Algorithm: Logistic Regression (balanced class weights)
+- **v1** → Label (`ham` or `spam`)  
+- **v2** → Message text  
 
-Vectorization: TF-IDF with unigrams and bigrams
+---
 
-Train/Test Split: 80/20 split with stratification
+## 🧹 Preprocessing
 
-Evaluation Metrics: Accuracy, Precision, Recall, F1 Score, Confusion Matrix
+- Converts text to lowercase  
+- Removes numbers and punctuation  
+- Removes extra whitespaces  
+
+---
+
+## 🤖 Model
+
+- **Algorithm:** Logistic Regression (with balanced class weights)  
+- **Vectorization:** TF-IDF (unigrams + bigrams)  
+- **Train/Test Split:** 80/20 with stratification  
+
+---
+
+## 🛠️ Tech Stack
+
+- Python  
+- Streamlit  
+- Scikit-learn  
+- Pandas  
+- NumPy  
+
+---
+
