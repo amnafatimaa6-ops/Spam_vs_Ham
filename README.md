@@ -4,13 +4,10 @@
 👉 https://spamvsham-o9hmruazeddpmfmmwcgwcc.streamlit.app/
 
 ---
-## 📸 Demo
 
-### Screenshot 1
-![Screenshot 1](screenshot1.png)
 
 ### Screenshot 2 (GIF Demo)
-![Spam vs Ham Demo](Spam vs Ham Classifier demo.gif)
+[Spam vs Ham Demo](Spam vs Ham Classifier demo.gif)
 ---
 
 ## 📖 Overview
