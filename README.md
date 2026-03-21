@@ -5,8 +5,9 @@
 
 ---
 
-### Screenshot 2 (GIF Demo)
-![Spam vs Ham Demo](Spam vs Ham Classifier demo.gif)
+## 🎥 Demo
+
+![Spam vs Ham Classifier Demo](Spam%20vs%20Ham%20Classifier%20demo.gif)
 
 ## 📖 Overview
 
