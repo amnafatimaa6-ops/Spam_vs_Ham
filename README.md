@@ -7,13 +7,11 @@
 
 ## 🎥 Demo
 
-## 🎥 Demo
-
 ### Demo 1
-![Spam vs Ham Classifier Demo 1](Spam_vs_Ham_demo1.gif)
+![Spam vs Ham Classifier Demo](Spam%20vs%20Ham%20Classifier%20demo.gif)
 
 ### Demo 2
-![Spam vs Ham Classifier Demo 2](Spam_vs_Ham_demo2.gif)
+![Spam vs Ham Classifier Demo 2](Spam%20vs%20Ham%20Classifier%20gif2.demo.gif)
 
 ## 📖 Overview
 
